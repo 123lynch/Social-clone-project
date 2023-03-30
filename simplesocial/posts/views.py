@@ -5,6 +5,8 @@ from django.views.generic import (TemplateView,ListView,DetailView,CreateView,Up
 from django.http import Http404
 from braces.views import SelectRelatedMixin
 
+from django.contrib import messages
+
 from posts import models
 from posts import forms
 
