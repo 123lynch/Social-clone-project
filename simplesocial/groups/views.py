@@ -11,7 +11,7 @@ class CreatGroup(LoginRequiredMixin,CreateView):
     fields = ('name','description')
     model = Group
 
-class SingleGroup(DeleteView):
+class SingleGroup(DetailView):
     model = Group
 
 class ListGroups(ListView):
